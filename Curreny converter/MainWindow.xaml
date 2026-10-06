@@ -1,0 +1,45 @@
+﻿<Window x:Class="Curreny_converter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Curreny_converter"
+        mc:Ignorable="d"
+        Title="Currency converter" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFC19C00"/>
+                <GradientStop Color="#FF9304D5" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.ColumnSpan="2" Content="Конвертер валют" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
+        <Label Content="Выберите валюту" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="18"/>
+        <Label Grid.Column="1" Content="Сумма в рублях" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="18"/>
+        <TextBox x:Name="textBoox1" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="150" FontSize="18"/>
+        <RadioButton x:Name="Jpy" Content="JPY" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontSize="18"/>
+        <RadioButton x:Name="Euro" Content="EUR" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontSize="18"/>
+        <RadioButton x:Name="USD" Content="USD" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" FontSize="18"/>
+        <Label Grid.Column="1" Content="Результат:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Grid.Row="4"/>
+        <TextBlock x:Name="textbloox1" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18"/>
+        <Button Content="Перевести" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" FontSize="18" Grid.ColumnSpan="2" Click="Button_Click"/>
+        <Image Source="/Flag_1.png" Grid.Column="0" Grid.Row="1" Width="50" HorizontalAlignment="Left" Margin="97,58,0,4" Grid.RowSpan="2"/>
+        <Image Source="/Flag_2.png" Grid.Column="0" Grid.Row="3" Width="50" HorizontalAlignment="Left" Margin="97,58,0,4" Grid.RowSpan="2"/>
+        <Image Source="/Flag_3.png" Grid.Column="0" Grid.Row="2" Width="50" HorizontalAlignment="Left" Margin="97,58,0,4" Grid.RowSpan="2"/>
+
+
+    </Grid>
+</Window>
